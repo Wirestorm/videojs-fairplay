@@ -1,5 +1,5 @@
 {
-  "name": "videojs-fairplay",
+  "name": "makeen-videojs-fairplay",
   "version": "0.2.0",
   "description": "Video.js tech for supporting Fairplay streaming.",
   "main": "src/videojs-fairplay",
@@ -38,5 +38,8 @@
     "video.js": "^5.10.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "webpack": "^1.15.0"
   }
 }
