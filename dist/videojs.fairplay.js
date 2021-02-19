@@ -462,7 +462,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	if (window.MediaSource) {
-	  videojs.getTech('Html5').registerSourceHandler(videojs.fairplaySourceHandler(), 0);
+    var mediaSourceMethod = (videojs.getComponent || videojs.getTech).bind(videojs); // keep it backwards compatible too
+	  mediaSourceMethod('Html5').registerSourceHandler(videojs.fairplaySourceHandler(), 0);
 	}
 
 	videojs.Html5Fairplay = Html5Fairplay;
